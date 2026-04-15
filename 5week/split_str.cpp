@@ -36,7 +36,8 @@ vector<string>split(const string& s) {
 	}
 	return ret;
 }
-
+/*
 int main(void) {
 	return 0;
 }
+*/

@@ -8,5 +8,5 @@
 #include<string>
 
 using std::vector; using std::string;
-vector<string>split(const string&);
+vector<string> split(const string&);
 #endif // !GUARD_split_h

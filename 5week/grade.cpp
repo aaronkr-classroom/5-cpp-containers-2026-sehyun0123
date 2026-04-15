@@ -1,8 +1,10 @@
 //grade.cpp
 #include<vector>
 #include<stdexcept>
+#include<list>
+#include<algorithm>
 #include"Student_info.h"
-#include"grade.h"
+#include "grade.h"
 #include "median.h"
 
 using namespace std;
@@ -27,4 +29,21 @@ double grade(double midterm, double final, double homework) {
 // Student_info 계산
 double grade(const Student_info& s) {
 	return grade(s.midterm, s.final, s.homework);
+}
+
+//학생의 과학 여부를 결정하는 서술 함수
+bool fgrade(const Student_info& s) {
+	return grade(s) < 60;
+}
+
+bool pgrade(const Student_info& s) {
+	return grade(s) < 60;
+}
+
+bool did_all_hw(const Student_info& s) {
+	return (
+		(find(
+			s.homework.begin()
+			s.homework.end(),0
+			)==))
 }

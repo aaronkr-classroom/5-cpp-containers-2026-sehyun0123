@@ -12,5 +12,8 @@ double grade(double, double, const vector<double>&);
 double grade(double, double, const vector<double>&);
 double grade(const Student_info&);
 
+bool fgrade(const Student_info&);
+bool pgrade(const Student_info&);
+bool did_all_hw(const Student_info&);
 
 #endif // !GUARD_grade_h
